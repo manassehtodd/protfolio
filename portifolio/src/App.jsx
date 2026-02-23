@@ -8,7 +8,7 @@ function App() {
 
   return (
   <div>
-    <NavBar />
+    <Navbar />
     <Hero />
     <About />
     <Project />
