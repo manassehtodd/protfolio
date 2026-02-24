@@ -3,7 +3,7 @@ import {BrandLinkedin, BrandTelegram, BrandWhatsapp, BrandInstagram, BrandGithub
 
 function Hero() {
     return(
-        <section id="hero" className="pt-30">
+        <section id="hero" className="pt-30 pb-30">
             <div className="flex flex-col items-center gap-6">
                 <div className="flex flex-row items-center justify-center gap-6 w-full">
                     <h1 className="text-9xl tracking-widest linefont font-semibold">

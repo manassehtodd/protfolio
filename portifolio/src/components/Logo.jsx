@@ -138,4 +138,34 @@ function ArrowNarrowRight({ className }) {
   );
 }
 
-export { BrandLinkedin, BrandTelegram, BrandWhatsapp, BrandInstagram, BrandGithub, ArrowNarrowRight };
+import React from "react";
+
+function ArrowUpRight({ className }) {
+  return (
+    <>
+      {/* 
+        tags: [top, corner, point]
+        category: Arrows
+        version: "1.0"
+        unicode: "ea24"
+      */}
+      <svg
+        aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="#000000"
+        strokeWidth="1.25"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        className={className}
+      >
+        <path d="M17 7l-10 10" />
+        <path d="M8 7h9v9" />
+      </svg>
+    </>
+  );
+};
+
+
+export { BrandLinkedin, BrandTelegram, BrandWhatsapp, BrandInstagram, BrandGithub, ArrowNarrowRight, ArrowUpRight };
