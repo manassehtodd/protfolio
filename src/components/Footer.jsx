@@ -57,7 +57,7 @@ function Footer() {
 
 
             {/*LINKS */}
-            <div className="flex flex-wrap justify-between text-[#a6a6a6] italic mt-10 ">
+            <div className="flex flex-wrap md:justify-between justify-around text-[#a6a6a6] italic mt-10 ">
                 <a href="https://github.com/manassehtodd/" target="_blank" className="cursor-target transition-all duration-300 hover:transform-[translateY(-.335rem)] border border-[#3d3d3d] p-3 rounded-3xl md:w-50 w-30 text-center">
                 <div className="flex items-center justify-center">
                 <BrandGithub className="h-6.25 w-6.25"/>Github
