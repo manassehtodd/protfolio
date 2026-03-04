@@ -5,7 +5,7 @@ const careerTime = [
         years: "2025-Present",
         start: "2025-06",
         end: "Present",
-        workplace : "Company A",
+        workplace : "Freelance",
         role: "Front-end Developer",
         tools: "React, Tailwindcss"
     },
