@@ -2,6 +2,13 @@ import Work from "./Work";
 import AnimatedContent from "./AnimatedContent";
 import { BrandLinkedin, BrandTelegram, BrandWhatsapp, BrandInstagram, BrandGithub, ArrowNarrowRight, ArrowUpRight } from "./Logo";
 
+const aboutDetails = {
+    frontend: [ "React", "reactjs", "HTML", "NextJs"],
+    style: [ "tailwindcss",],
+    backend: ["NodejS, ExpressJS"],
+    devops: ["Git", "Github", "Gitlab", "Bash"],
+}
+
 function About() {
     return(
     <section id="about" className="pt-30 p-5">
@@ -33,14 +40,25 @@ function About() {
                 <div className="h-30 border border-[#3d3d3d] bg-white text-[#121212] rounded-4xl p-5 col-span-2">
                     <span className="text-xl">Front-end</span>
                     <ul className="flex flex-row gap-2">
-                        <li>React /</li>
-                        <li>Nextjs /</li>
+                            {aboutDetails.frontend.map((tool, index) => (
+                                <li
+                                    key={index}
+                                >
+                                    {tool}
+                                </li>
+                                ))}
                     </ul>
                 </div>
                 <div className="h-30 w-auto border border-[#3d3d3d] bg-transparent p-5 rounded-4xl text-[#a6a6a6]">
                     <span className="text-xl">Style</span>
                     <ul className="flex flex-row gap-2">
-                        <li>Tailwindcss</li>
+                            {aboutDetails.style.map((tool, index) => (
+                                <li
+                                    key={index}
+                                >
+                                    {tool}
+                                </li>
+                                ))}
                     </ul>
                 </div>
                 <a href="https://github.com/manassehtodd" target="_blank"><div className=" flex flex-row items-center static">
@@ -53,8 +71,13 @@ function About() {
                 <div className="h-30 md:w-120 w-full border border-[#3d3d3d] bg-transparent p-5 rounded-4xl col-span-2">
                     <span className="text-xl">Back-end</span>
                     <ul className="flex flex-row gap-2">
-                        <li>Nodejs</li>
-                        <li>Express</li>
+                            {aboutDetails.backend.map((tool, index) => (
+                                <li
+                                    key={index}
+                                >
+                                    {tool}
+                                </li>
+                                ))}
                     </ul>
                 </div>
                 <div>
@@ -62,10 +85,14 @@ function About() {
                 </div>
                 <div className="h-30 w-50 border border-[#3d3d3d] bg-transparent p-5 rounded-4xl">
                     <span className="text-xl">DevOps</span>
-                    <ul className="flex flex-row gap-2">
-                        <li>Git</li>
-                        <li>Github</li>
-                        <li>Gitlab</li>
+                    <ul className="flex flex-wrap flex-row gap-2">
+                            {aboutDetails.devops.map((tool, index) => (
+                                <li
+                                    key={index}
+                                >
+                                    {tool}
+                                </li>
+                                ))}
                     </ul>
                 </div>
             </div>
