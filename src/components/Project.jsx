@@ -1,13 +1,15 @@
 import { BrandLinkedin, BrandTelegram, BrandWhatsapp, BrandInstagram, BrandGithub, ArrowNarrowRight, ArrowUpRight, EmailIcon } from "./Logo";
+import ProjectMobile from "./ProjectMobile";
 function Project() {
     return(
         <section id="project" className="pt-30 p-5">
-            <div className="flex w-full justify-center items-center">
+            <div className="flex w-full md:justify-center items-center">
                 <h1 className="text-2xl font-semibold">.../Projects...</h1>
             </div>
             <div>
                 {/* Frist project block */}
-                <div className="grid grid-cols-6 grid-rows-3 gap-5 pt-5">
+                <ProjectMobile />
+                <div className="md:grid hidden grid-cols-6 grid-rows-3 gap-5 pt-5 ">
                     <div className="col-span-2 row-span-3 h-100 w-75">
                         <h1>Gostat</h1>
                         <ul className="flex flex-row gap-3 flex-wrap text-sm pt-10 pb-10">
