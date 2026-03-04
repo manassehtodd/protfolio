@@ -1,10 +1,12 @@
 import DecryptedText from "./DecryptedText";
+import MoblieHero from "./MoblieHero";
 import {BrandLinkedin, BrandTelegram, BrandWhatsapp, BrandInstagram, BrandGithub, ArrowNarrowRight } from "./Logo";
 
 function Hero() {
     return(
         <section id="hero" className="pt-30 pb-30">
-            <div className="flex flex-col items-center gap-6">
+            <MoblieHero />
+            <div className="flex-col items-center gap-6 hidden md:flex">
                 <div className="flex flex-row items-center justify-center gap-6 w-full">
                     <h1 className="text-9xl tracking-widest linefont font-semibold cursor-target">
                         <DecryptedText
@@ -40,7 +42,7 @@ function Hero() {
                 </div>
             </div>
             <div>
-                <div className="flex flex-row justify-center items-center gap-6 w-full mt-10 italic ">
+                <div className="flex flex-row flex-wrap justify-center items-center gap-6 w-full mt-10 italic ">
                     <a href="https://github.com/manassehtodd/Finovo" target="_blank"><button className="hover: cursor-pointer h-12 w-30 border border-[#a6a6a6] shadow-md transition-all duration-300 hover:transform-[translateY(-.335rem)] hover:shadow-xl rounded-full text-sm text-[#a6a6a6]">
                 <div className="flex items-center justify-center ">                   
                         <BrandGithub className="h-6.25 w-6.25" />
