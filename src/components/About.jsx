@@ -24,7 +24,7 @@ function About() {
 
 
         <div className="flex md:flex-row flex-col justify-between">
-                        <div className="p-10 ml-5">
+                        <div className="p-10 ml-5 md:hidden block">
                 <div className="h-120 md:w-80 w-full bg-white rounded-xl items-center flex justify-center">
                     <span className="text-black text-center">PICTURE</span>
                 </div>
@@ -67,6 +67,11 @@ function About() {
                         <li>Github</li>
                         <li>Gitlab</li>
                     </ul>
+                </div>
+            </div>
+                <div className="p-10 ml-5 md:block hidden">
+                <div className="h-120 md:w-80 w-full bg-white rounded-xl items-center flex justify-center">
+                    <span className="text-black text-center">PICTURE</span>
                 </div>
             </div>
         </div>
