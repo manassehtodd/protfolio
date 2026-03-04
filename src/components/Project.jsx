@@ -1,13 +1,8 @@
 import { BrandLinkedin, BrandTelegram, BrandWhatsapp, BrandInstagram, BrandGithub, ArrowNarrowRight, ArrowUpRight, EmailIcon } from "./Logo";
-
-const projectDetails = [
-    {
-        name: "Finovo",
-        description: "Finovo - a cutting-egde microservice-based application designed to handle HTTP requests authentication and staticstics with finance.",
-        toolUsed: ["Goland", "TypeScript", "Gin", "NextJS", "PostgrSQL", "Redis"],
-        githubLink: "https://manassehtodd.github.io/Finovo/"
-    }
-]
+import FinovoSnap from "./../assets/images/Finovo-snap.png";
+import FinovoSnap2 from "./../assets/images/Finovo-snap2.png";
+import FinovoSnap3 from "./../assets/images/Finovo-snap3.png";
+import projectDetails from "./ProjectDetail";
 
 import ProjectMobile from "./ProjectMobile";
 function Project() {
@@ -36,16 +31,21 @@ function Project() {
                             {projectDetails[0].description}
                         </span>
                     </div>
-                    <div className="col-span-3 row-span-2 w-full bg-white rounded-xl"></div>
-                    <div className="row-span-3 w-full bg-green-600 rounded-xl"></div>
-                    <div className="col-span-2 w-full bg-amber-500 rounded-xl"></div>
-                    <a href={projectDetails[0].githubLink} target="_blank" rel="noopener noreferrer">
-                        <div className=" flex flex-row items-center static">
-                            <div className="border border-[#3d3d3d] w-10 rounded-full p-2.5">
-                                <BrandGithub className="h-5 w-5" /> 
-                            </div>
-                            <div className="absolute right-109 h-10 w-10 bg-white rounded-full items-center flex justify-center">
-                                <ArrowUpRight className="h-5 w-5 cursor-pointer" />
+                    <div className="col-span-3 row-span-2 w-full rounded-xl">
+                        <img src={FinovoSnap} alt="Finovo-snapshot" className="w-full h-full object-cover rounded-xl" />
+                    </div>
+                    <div className="row-span-3 w-full bg-green-600 rounded-xl">
+                        <img src={FinovoSnap3} alt="Finovo-snapshot" className="w-full h-full object-center rounded-xl" />
+                    </div>
+                    <div className="col-span-2 w-full bg-amber-500 rounded-xl">
+                        <img src={FinovoSnap2} alt="Finovo-snapshot" className="w-full h-full object-center rounded-xl" />
+                    </div>
+                    <a href={projectDetails[0].githubLink} target="_blank" rel="noopener noreferrer"><div className=" flex flex-row items-center static">
+                        <div className="border border-[#3d3d3d] w-10 rounded-full p-2.5">
+                            <BrandGithub className="h-5 w-5" /> 
+                        </div>
+                        <div className="absolute right-109 h-10 w-10 bg-white rounded-full items-center flex justify-center">
+                        <ArrowUpRight className="h-5 w-5 cursor-pointer" />
                         </div>
                     </div></a>
                 </div>

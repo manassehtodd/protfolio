@@ -1,31 +1,34 @@
 import { BrandLinkedin, BrandTelegram, BrandWhatsapp, BrandInstagram, BrandGithub, ArrowNarrowRight, ArrowUpRight, EmailIcon } from "./Logo";
-
-const projectDetails = [
-    {
-        name: "Finovo",
-        description: "Finovo - a cutting-egde microservice-based application designed to handle HTTP requests authentication and staticstics with finance.",
-        toolUsed: ["Goland", "TypeScript", "Gin", "NextJS", "PostgrSQL", "Redis"],
-        githubLink: "https://manassehtodd.github.io/Finovo/"
-    }
-]
+import FinovoSnap from "./../assets/images/Finovo-snap.png";
+import FinovoSnap2 from "./../assets/images/Finovo-snap2.png";
+import FinovoSnap3 from "./../assets/images/Finovo-snap3.png";
+import projectDetails from "./ProjectDetail";
 function ProjectMobile() {
     return(
         <div className="pt-10 md:hidden block">
             <div className="grid grid-cols-4 grid-rows-3 gap-5">
-                <div className="col-span-3 row-span-2 w-full bg-white rounded-xl"></div>
-                <div className="row-span-3 w-full bg-green-600 rounded-xl"></div>
-                <div className="col-span-2 w-full bg-amber-500 rounded-xl"></div>
+                <div className="col-span-3 row-span-2 w-full bg-white rounded-xl">
+                    <img src={FinovoSnap} alt="Finovo-snapshot" className="w-full h-full object-cover rounded-xl" />
+                </div>
+                <div className="row-span-3 w-full bg-green-600 rounded-xl">
+                    <img src={FinovoSnap3} alt="Finovo-snapshot" className="w-full h-full object-center rounded-xl" />
+                </div>
+                <div className="col-span-2 w-full bg-amber-500 rounded-xl">
+                    <img src={FinovoSnap2} alt="Finovo-snapshot" className="w-full h-full object-center rounded-xl" />
+                </div>
 
             </div>
             <div className="mt-5">
                     <h1 className="text-xl">{projectDetails[0].name}</h1>
                         <ul className="flex flex-row gap-3 flex-wrap text-sm pt-5 pb-5">
-                            <li className="border border-[#3d3d3d] p-2 rounded-3xl">Goland</li>
-                            <li className="border border-[#3d3d3d] p-2 rounded-3xl">TypeScript</li>
-                            <li className="border border-[#3d3d3d] p-2 rounded-3xl">Gin</li>
-                            <li className="border border-[#3d3d3d] p-2 rounded-3xl">NextJS</li>
-                            <li className="border border-[#3d3d3d] p-2 rounded-3xl">PostgrSQL</li>
-                            <li className="border border-[#3d3d3d] p-2 rounded-3xl">Redis</li>
+                            {projectDetails[0].toolUsed.map((tool, index) => (
+                                <li
+                                    key={index}
+                                    className="border border-[#3d3d3d] px-3 py-1 rounded-3xl"
+                                >
+                                    {tool}
+                                </li>
+                                ))}
                         </ul>
                         <span>
                             {projectDetails[0].description}
