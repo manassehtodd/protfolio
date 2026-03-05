@@ -1,4 +1,4 @@
-import { useState, useEffect, Suspense } from "react";
+import React, { useState, useEffect, Suspense } from "react";
 import Loader from "./components/Loader";
 import Navbar from "./components/NavBar";
 import Hero from "./components/Hero";
