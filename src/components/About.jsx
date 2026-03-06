@@ -83,7 +83,7 @@ function About() {
                 <div>
                     <span className="text-[#a6a6a6] text-sm">Some of my <em className="text-[#f5f5f5]">favorite technologies or tools</em>, that I worked with</span>
                 </div>
-                <div className="h-30 w-50 border border-[#3d3d3d] bg-transparent p-5 rounded-4xl">
+                <div className="h-30 md:w-50 w-full border border-[#3d3d3d] bg-transparent p-5 rounded-4xl">
                     <span className="text-xl">DevOps</span>
                     <ul className="flex flex-wrap flex-row gap-2">
                             {aboutDetails.devops.map((tool, index) => (

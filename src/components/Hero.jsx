@@ -4,7 +4,7 @@ import {BrandLinkedin, BrandTelegram, BrandWhatsapp, BrandInstagram, BrandGithub
 
 function Hero() {
     return(
-        <section id="hero" className="pt-30 pb-30">
+        <section id="hero" className="pt-30 pb-30 p-5">
             <MoblieHero />
             <div className="flex-col items-center gap-6 hidden md:flex">
                 <div className="flex flex-row items-center justify-center gap-6 w-full">
