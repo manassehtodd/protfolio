@@ -3,6 +3,7 @@ import { useState } from "react";
 function NavBar() {
 
     const [open, setOpen] = useState(false);
+    const closeMenu = () => setOpen(false);
 
     return(
         <section id="navbar" className="p-5">
@@ -44,9 +45,10 @@ function NavBar() {
             </button>
         )}
         <ul className="flex flex-col text-2xl gap-4 mt-5">
-          <li><a href="#home" className="cursor-target">Home</a></li>
-          <li><a href="#solution" className="cursor-target">Solution</a></li>
-          <li><a href="#about" className="cursor-target">About</a></li>
+          <li><a href="#home" onClick={closeMenu} className="cursor-target">Home</a></li>
+          <li><a href="#solution" onClick={closeMenu} className="cursor-target">Solution</a></li>
+          <li><a href="#project" onClick={closeMenu} className="cursor-target">Projects</a></li>
+          <li><a href="#about" onClick={closeMenu} className="cursor-target">About</a></li>
         </ul>
       </div>
                 </div>
