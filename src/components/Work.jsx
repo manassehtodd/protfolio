@@ -50,7 +50,7 @@ function Work() {
                         <tr key={index} className="border-b border-[#3d3d3d] hover:bg-[#f2f2f2] hover:text-black  transition-colors duration-300 cursor-[url(/src/assets/cursor.svg),pointer]">
                             <td className="px-4 py-2 pt-6 text-[#a6a6a6]">{item.years}</td>
                             <td className="px-4 py-2">
-                                <span className="md:mr-190 mr-5">{item.workplace}</span> 
+                                <span className="lg:mr-190 mr-5">{item.workplace}</span> 
                                 <span className="mr-5">{item.role} |</span> 
                                 <span>{item.tools}</span>
                             </td>

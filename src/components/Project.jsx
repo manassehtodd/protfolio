@@ -15,7 +15,7 @@ function Project() {
                 {/* Frist project block */}
                 <ProjectMobile />
                 <div className="md:grid hidden grid-cols-6 grid-rows-3 gap-5 pt-5 ">
-                    <div className="col-span-2 row-span-3 h-100 w-75">
+                    <div className="col-span-2 row-span-3 lg:h-100 lg:w-75 w-full">
                         <h1>{projectDetails[0].name}</h1>
                         <ul className="flex flex-row gap-3 flex-wrap text-sm pt-10 pb-10">
                             {projectDetails[0].toolUsed.map((tool, index) => (

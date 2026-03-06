@@ -8,7 +8,7 @@ function Hero() {
             <MoblieHero />
             <div className="flex-col items-center gap-6 hidden md:flex">
                 <div className="flex flex-row items-center justify-center gap-6 w-full">
-                    <h1 className="text-9xl tracking-widest linefont font-semibold cursor-target">
+                    <h1 className="lg:text-9xl md:text-5xl tracking-widest linefont font-semibold cursor-target">
                         <DecryptedText
                             text="Front-end"
                             speed={150}
@@ -29,7 +29,7 @@ function Hero() {
                     <span className="text-wrap w-75 text-[#a6a6a6] cursor-target">
                         My Goals is to write <span className="text-[#f5f5f5]">maintainable, clean</span> and <span className="text-[#f5f5f5]">understandable code</span> to process development was enjoyable.
                         </span>
-                    <h1 className="text-9xl tracking-widest linefont font-semibold cursor-target">
+                    <h1 className="lg:text-9xl md:text-5xl tracking-widest linefont font-semibold cursor-target">
                         <DecryptedText
                             text="Developer"
                             speed={150}
