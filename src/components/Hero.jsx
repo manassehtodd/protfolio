@@ -11,7 +11,7 @@ function Hero() {
                     <h1 className="text-9xl tracking-widest linefont font-semibold cursor-target">
                         <DecryptedText
                             text="Front-end"
-                            speed={100}
+                            speed={150}
                             animateOn="view"
                             revealDirection="start"
                             sequential
@@ -32,7 +32,7 @@ function Hero() {
                     <h1 className="text-9xl tracking-widest linefont font-semibold cursor-target">
                         <DecryptedText
                             text="Developer"
-                            speed={100}
+                            speed={150}
                             animateOn="view"
                             revealDirection="start"
                             sequential
